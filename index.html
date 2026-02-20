@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="314AI - 精选AI工具与效率软件推荐，包括AdsPower指纹浏览器、302AI人工智能平台、HelpLook知识库系统等专业工具">
+    <meta name="description" content="314ai - 精选AI工具与效率软件推荐，包括AdsPower指纹浏览器、302AI人工智能平台、HelpLook知识库系统等专业工具">
     <meta name="keywords" content="AI工具, 指纹浏览器, 知识库系统, AdsPower, 302AI, HelpLook, 效率工具, 多账号管理">
-    <meta name="author" content="314AI">
+    <meta name="author" content="314ai">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://314ai.github.io">
-    <meta property="og:title" content="314AI - 精选AI工具推荐">
+    <meta property="og:title" content="314ai - 精选AI工具推荐">
     <meta property="og:description" content="发现最实用的AI工具与效率软件，提升工作效能">
     <meta property="og:image" content="https://314ai.github.io/og-image.jpg">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="314AI - 精选AI工具推荐">
+    <meta name="twitter:title" content="314ai - 精选AI工具推荐">
     <meta name="twitter:description" content="发现最实用的AI工具与效率软件">
     
-    <title>314AI - 精选AI工具与效率软件推荐</title>
+    <title>314ai - 精选AI工具与效率软件推荐</title>
     
     <link rel="canonical" href="https://314ai.github.io">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,9 +38,6 @@
             --text-primary: #ffffff;
             --text-secondary: #a1a1aa;
             --border-color: rgba(255, 255, 255, 0.1);
-            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
         }
 
         * {
@@ -53,7 +50,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--primary-bg);
             color: var(--text-primary);
-            line-height: 1.6;
+            line-height: 1.5;
             overflow-x: hidden;
             min-height: 100vh;
         }
@@ -104,7 +101,7 @@
 
         /* Header */
         header {
-            padding: 2rem 5%;
+            padding: 1.2rem 5%;
             position: relative;
             z-index: 10;
         }
@@ -119,7 +116,7 @@
 
         .logo {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 700;
             background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
             -webkit-background-clip: text;
@@ -127,6 +124,18 @@
             background-clip: text;
             text-decoration: none;
             letter-spacing: -0.5px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.4rem 0.9rem;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            color: var(--accent-blue);
+            font-weight: 500;
         }
 
         .nav-links {
@@ -138,7 +147,7 @@
         .nav-links a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 500;
             transition: color 0.3s ease;
             position: relative;
@@ -147,7 +156,7 @@
         .nav-links a::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -4px;
             left: 0;
             width: 0;
             height: 2px;
@@ -166,17 +175,17 @@
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 4rem 5% 6rem;
-            max-width: 900px;
+            padding: 1.5rem 5% 2.5rem;
+            max-width: 800px;
             margin: 0 auto;
         }
 
         .hero h1 {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
             font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            margin-bottom: 0.8rem;
             background: linear-gradient(135deg, #fff 0%, #c7c7c7 50%, #fff 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -185,45 +194,17 @@
         }
 
         .hero p {
-            font-size: 1.25rem;
+            font-size: 1rem;
             color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto 2rem;
+            max-width: 500px;
+            margin: 0 auto;
             animation: fadeInUp 0.8s ease-out 0.2s backwards;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            border-radius: 50px;
-            font-size: 0.875rem;
-            color: var(--accent-blue);
-            margin-bottom: 2rem;
-            animation: fadeInUp 0.8s ease-out 0.1s backwards;
-        }
-
-        .badge::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--accent-blue);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
         }
 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(20px);
             }
             to {
                 opacity: 1;
@@ -233,45 +214,46 @@
 
         /* Products Grid */
         .products-section {
-            padding: 2rem 5% 6rem;
+            padding: 0.5rem 5% 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 1.5rem;
         }
 
         .section-title h2 {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+            margin-bottom: 0.2rem;
         }
 
         .section-title p {
             color: var(--text-secondary);
+            font-size: 0.9rem;
         }
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.25rem;
+            align-items: stretch;
         }
 
-        /* Product Card */
+        /* Product Card - Compact Layout with aligned bottom */
         .product-card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 24px;
-            padding: 2.5rem;
+            border-radius: 16px;
+            padding: 1.25rem;
             position: relative;
             overflow: hidden;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(10px);
             display: flex;
             flex-direction: column;
-            height: 100%;
         }
 
         .product-card::before {
@@ -285,20 +267,27 @@
         }
 
         .product-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
             border-color: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
         }
 
         .card-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 16px;
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            flex-shrink: 0;
             position: relative;
             overflow: hidden;
         }
@@ -309,7 +298,7 @@
             inset: 0;
             background: inherit;
             opacity: 0.2;
-            filter: blur(20px);
+            filter: blur(15px);
         }
 
         .adspower .card-icon {
@@ -324,18 +313,23 @@
             background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
         }
 
-        .product-card h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 0.75rem;
+        .card-title-row {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .card-title-row h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0;
         }
 
         .tag {
-            font-size: 0.75rem;
-            padding: 0.25rem 0.75rem;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.5rem;
             border-radius: 50px;
             font-weight: 600;
             text-transform: uppercase;
@@ -359,36 +353,38 @@
 
         .product-description {
             color: var(--text-secondary);
-            margin-bottom: 2rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.85rem;
+            line-height: 1.5;
             flex-grow: 1;
-            line-height: 1.7;
         }
 
         .features-list {
             list-style: none;
-            margin-bottom: 2rem;
-            space-y: 0.5rem;
+            margin-bottom: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.4rem 0.6rem;
         }
 
         .features-list li {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.4rem;
             color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
+            font-size: 0.8rem;
         }
 
         .features-list li::before {
             content: '✓';
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.75rem;
+            font-size: 0.65rem;
             color: var(--text-primary);
             flex-shrink: 0;
         }
@@ -397,18 +393,19 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
+            gap: 0.4rem;
             width: 100%;
-            padding: 1rem 2rem;
-            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.9rem;
             text-decoration: none;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
             position: relative;
             overflow: hidden;
+            margin-top: auto;
         }
 
         .cta-button::before {
@@ -429,43 +426,43 @@
         .adspower .cta-button {
             background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
             color: white;
-            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
         }
 
         .ai302 .cta-button {
             background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
             color: white;
-            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
         }
 
         .helplook .cta-button {
             background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
             color: white;
-            box-shadow: 0 4px 20px rgba(6, 182, 212, 0.3);
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
 
         .cta-button svg {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             transition: transform 0.3s ease;
         }
 
         .cta-button:hover svg {
-            transform: translateX(4px);
+            transform: translateX(3px);
         }
 
         /* Footer */
         footer {
             border-top: 1px solid var(--border-color);
-            padding: 3rem 5%;
+            padding: 1.5rem 5%;
             text-align: center;
             color: var(--text-secondary);
-            margin-top: 4rem;
+            margin-top: 1.5rem;
         }
 
         .footer-content {
@@ -476,14 +473,15 @@
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1.5rem;
+            gap: 1.5rem;
+            margin-bottom: 0.75rem;
             flex-wrap: wrap;
         }
 
         .footer-links a {
             color: var(--text-secondary);
             text-decoration: none;
+            font-size: 0.85rem;
             transition: color 0.3s;
         }
 
@@ -492,8 +490,8 @@
         }
 
         .copyright {
-            font-size: 0.9rem;
-            opacity: 0.8;
+            font-size: 0.8rem;
+            opacity: 0.7;
         }
 
         /* Responsive */
@@ -507,11 +505,11 @@
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
             
-            .product-card {
-                padding: 1.5rem;
+            .hero {
+                padding: 1.2rem 5% 1.8rem;
             }
         }
 
@@ -538,20 +536,15 @@
 
     <header>
         <nav>
-            <a href="#" class="logo">314AI</a>
-            <ul class="nav-links">
-                <li><a href="#tools">工具推荐</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#contact">联系</a></li>
-            </ul>
+            <a href="#" class="logo">314ai</a>
+            <div class="badge">精选优质工具</div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="badge">精选优质工具</div>
             <h1>发现最实用的<br>AI工具与效率软件</h1>
-            <p>精心筛选的顶级生产力工具，帮助您提升工作效率，实现业务增长</p>
+            <p>精心筛选的顶级生产力工具，帮助您提升工作效率</p>
         </section>
 
         <section class="products-section" id="tools">
@@ -563,19 +556,21 @@
             <div class="products-grid">
                 <!-- AdsPower Card -->
                 <article class="product-card adspower fade-in delay-1">
-                    <div class="card-icon">🌐</div>
-                    <h3>
-                        AdsPower
-                        <span class="tag">指纹浏览器</span>
-                    </h3>
+                    <div class="card-header">
+                        <div class="card-icon">🌐</div>
+                        <div class="card-title-row">
+                            <h3>AdsPower</h3>
+                            <span class="tag">指纹浏览器</span>
+                        </div>
+                    </div>
                     <p class="product-description">
-                        专业的多账号管理指纹浏览器，为跨境电商、社交媒体营销和广告投放提供安全独立的浏览器环境。支持团队协作、自动化操作和RPA机器人，有效防止账号关联。
+                        专业的多账号管理指纹浏览器，为跨境电商、社交媒体营销和广告投放提供安全独立的浏览器环境。支持团队协作、自动化操作和RPA机器人。
                     </p>
                     <ul class="features-list">
-                        <li>多账号防关联管理</li>
-                        <li>独立浏览器指纹环境</li>
-                        <li>团队协作与权限管理</li>
-                        <li>RPA自动化操作支持</li>
+                        <li>多账号防关联</li>
+                        <li>独立指纹环境</li>
+                        <li>团队协作管理</li>
+                        <li>RPA自动化</li>
                     </ul>
                     <a href="https://www.adspower.net/share/boss123" target="_blank" rel="noopener noreferrer" class="cta-button">
                         立即使用
@@ -587,19 +582,21 @@
 
                 <!-- 302AI Card -->
                 <article class="product-card ai302 fade-in delay-2">
-                    <div class="card-icon">🤖</div>
-                    <h3>
-                        302AI
-                        <span class="tag">AI平台</span>
-                    </h3>
+                    <div class="card-header">
+                        <div class="card-icon">🤖</div>
+                        <div class="card-title-row">
+                            <h3>302AI</h3>
+                            <span class="tag">AI平台</span>
+                        </div>
+                    </div>
                     <p class="product-description">
-                        一站式AI应用平台，聚合全球顶级大模型能力。提供ChatGPT、Claude、Midjourney等多种AI服务，无需翻墙即可使用，支持API调用和私有化部署。
+                        一站式AI应用平台，聚合全球顶级大模型能力。提供ChatGPT、Claude、Midjourney等多种AI服务，无需翻墙即可使用，支持API调用。
                     </p>
                     <ul class="features-list">
-                        <li>多模型聚合平台</li>
-                        <li>无需翻墙稳定访问</li>
+                        <li>多模型聚合</li>
+                        <li>无需翻墙</li>
                         <li>API接口支持</li>
-                        <li>企业级私有化部署</li>
+                        <li>私有化部署</li>
                     </ul>
                     <a href="https://share.302.ai/YGLbfB" target="_blank" rel="noopener noreferrer" class="cta-button">
                         免费试用
@@ -611,19 +608,21 @@
 
                 <!-- HelpLook Card -->
                 <article class="product-card helplook fade-in delay-3">
-                    <div class="card-icon">📚</div>
-                    <h3>
-                        HelpLook
-                        <span class="tag">知识库</span>
-                    </h3>
+                    <div class="card-header">
+                        <div class="card-icon">📚</div>
+                        <div class="card-title-row">
+                            <h3>HelpLook</h3>
+                            <span class="tag">知识库</span>
+                        </div>
+                    </div>
                     <p class="product-description">
-                        AI驱动的知识库与帮助中心搭建系统，基于GPT技术实现智能问答。快速构建企业知识库、产品文档中心，支持SEO优化和自定义域名，提升客户自助服务体验。
+                        AI驱动的知识库与帮助中心搭建系统，基于GPT技术实现智能问答。快速构建企业知识库、产品文档中心，支持SEO优化。
                     </p>
                     <ul class="features-list">
-                        <li>AI智能问答集成</li>
-                        <li>SEO友好架构</li>
-                        <li>自定义域名支持</li>
-                        <li>多语言自动翻译</li>
+                        <li>AI智能问答</li>
+                        <li>SEO友好</li>
+                        <li>自定义域名</li>
+                        <li>多语言支持</li>
                     </ul>
                     <a href="https://share.helplook.net/boss123" target="_blank" rel="noopener noreferrer" class="cta-button">
                         开始搭建
@@ -644,7 +643,7 @@
                 <a href="#terms">使用条款</a>
                 <a href="mailto:contact@314ai.github.io">联系我们</a>
             </div>
-            <p class="copyright">&copy; 2024 314AI. All rights reserved. | 精选AI工具推荐</p>
+            <p class="copyright">&copy; 2024 314ai. All rights reserved.</p>
         </div>
     </footer>
 
@@ -653,14 +652,9 @@
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "314AI",
+        "name": "314ai",
         "url": "https://314ai.github.io",
-        "description": "精选AI工具与效率软件推荐平台",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://314ai.github.io/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+        "description": "精选AI工具与效率软件推荐平台"
     }
     </script>
 
@@ -716,8 +710,8 @@
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset;
             
-            if (currentScroll > 100) {
-                header.style.background = 'rgba(10, 10, 15, 0.8)';
+            if (currentScroll > 50) {
+                header.style.background = 'rgba(10, 10, 15, 0.9)';
                 header.style.backdropFilter = 'blur(20px)';
             } else {
                 header.style.background = 'transparent';
