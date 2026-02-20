@@ -35,6 +35,10 @@
             --accent-blue: #3b82f6;
             --accent-purple: #8b5cf6;
             --accent-cyan: #06b6d4;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-pink: #ec4899;
+            --accent-red: #ef4444;
             --text-primary: #ffffff;
             --text-secondary: #a1a1aa;
             --border-color: rgba(255, 255, 255, 0.1);
@@ -298,6 +302,10 @@
             filter: blur(15px);
         }
 
+        .yinhe .card-icon {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        }
+
         .adspower .card-icon {
             background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
         }
@@ -308,6 +316,18 @@
 
         .helplook .card-icon {
             background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+        }
+
+        .kookeey .card-icon {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .duoplus .card-icon {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .salesmartly .card-icon {
+            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
         }
 
         .card-title-row {
@@ -333,6 +353,11 @@
             letter-spacing: 0.5px;
         }
 
+        .yinhe .tag {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+        }
+
         .adspower .tag {
             background: rgba(59, 130, 246, 0.15);
             color: #60a5fa;
@@ -346,6 +371,21 @@
         .helplook .tag {
             background: rgba(6, 182, 212, 0.15);
             color: #22d3ee;
+        }
+
+        .kookeey .tag {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+        }
+
+        .duoplus .tag {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fbbf24;
+        }
+
+        .salesmartly .tag {
+            background: rgba(236, 72, 153, 0.15);
+            color: #f472b6;
         }
 
         .product-description {
@@ -420,6 +460,12 @@
             left: 100%;
         }
 
+        .yinhe .cta-button {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+        }
+
         .adspower .cta-button {
             background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
             color: white;
@@ -436,6 +482,24 @@
             background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
             color: white;
             box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+        }
+
+        .kookeey .cta-button {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+        }
+
+        .duoplus .cta-button {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .salesmartly .cta-button {
+            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
         }
 
         .cta-button:hover {
@@ -525,6 +589,10 @@
         .delay-1 { animation-delay: 0.1s; }
         .delay-2 { animation-delay: 0.2s; }
         .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+        .delay-7 { animation-delay: 0.7s; }
     </style>
 </head>
 <body>
@@ -534,7 +602,7 @@
     <header>
         <nav>
             <a href="#" class="logo">314ai</a>
-            <div class="badge">精选优质工具</div>
+            <div class="badge">工具甄选</div>
         </nav>
     </header>
 
@@ -551,8 +619,34 @@
             </div>
 
             <div class="products-grid">
+                <!-- 银河录像局 Card -->
+                <article class="product-card yinhe fade-in delay-1">
+                    <div class="card-header">
+                        <div class="card-icon">🎬</div>
+                        <div class="card-title-row">
+                            <h3>银河录像局</h3>
+                            <span class="tag">AI代充合租</span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        海外AI应用服务代充/合租平台，提供Chat GPT、GeminiPro、Nanobanana、Codex、Grok等海外AI代充合租服务。支付宝微信付款，无需信用卡，自动发货，安全稳定。
+                    </p>
+                    <ul class="features-list">
+                        <li>Chat GPT代充</li>
+                        <li>Gemini PRO代充</li>
+                        <li>Nanobanana 充值</li>
+                        <li>自动发货秒开</li>
+                    </ul>
+                    <a href="https://nf.video/Y7SG6" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        立即上车
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </article>
+
                 <!-- AdsPower Card -->
-                <article class="product-card adspower fade-in delay-1">
+                <article class="product-card adspower fade-in delay-2">
                     <div class="card-header">
                         <div class="card-icon">🌐</div>
                         <div class="card-title-row">
@@ -578,7 +672,7 @@
                 </article>
 
                 <!-- 302AI Card -->
-                <article class="product-card ai302 fade-in delay-2">
+                <article class="product-card ai302 fade-in delay-3">
                     <div class="card-header">
                         <div class="card-icon">🤖</div>
                         <div class="card-title-row">
@@ -604,7 +698,7 @@
                 </article>
 
                 <!-- HelpLook Card -->
-                <article class="product-card helplook fade-in delay-3">
+                <article class="product-card helplook fade-in delay-4">
                     <div class="card-header">
                         <div class="card-icon">📚</div>
                         <div class="card-title-row">
@@ -623,6 +717,84 @@
                     </ul>
                     <a href="https://share.helplook.net/boss123" target="_blank" rel="noopener noreferrer" class="cta-button">
                         开始搭建
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- kookeey Card -->
+                <article class="product-card kookeey fade-in delay-5">
+                    <div class="card-header">
+                        <div class="card-icon">🌍</div>
+                        <div class="card-title-row">
+                            <h3>kookeey</h3>
+                            <span class="tag">代理IP</span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        全球高质量代理IP严选平台，提供4700万+动态住宅IP，覆盖190+国家。支持静态住宅、数据中心、移动代理等多种类型，专为跨境电商和出海业务优化。
+                    </p>
+                    <ul class="features-list">
+                        <li>4700万+IP池</li>
+                        <li>190+国家覆盖</li>
+                        <li>业务级严选</li>
+                        <li>UDP+DNS定制</li>
+                    </ul>
+                    <a href="https://kookeey-ye-wu-ji-quan-qiu-dai-li-ip.saaslink.net/boss123" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        领取200MB免费
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- DuoPlus Card -->
+                <article class="product-card duoplus fade-in delay-6">
+                    <div class="card-header">
+                        <div class="card-icon">📱</div>
+                        <div class="card-title-row">
+                            <h3>DuoPlus</h3>
+                            <span class="tag">云手机</span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        全球社媒多账号管理专家，云端ARM真机部署。支持TikTok、WhatsApp、Facebook等多账号矩阵运营，无需实体设备，网页端批量管理，防关联风控。
+                    </p>
+                    <ul class="features-list">
+                        <li>云端真机环境</li>
+                        <li>无限多开分身</li>
+                        <li>一键换肤改机</li>
+                        <li>团队协作共享</li>
+                    </ul>
+                    <a href="https://www.duoplus.cn/share/boss123" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        注册领1个月免费
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- SaleSmartly Card -->
+                <article class="product-card salesmartly fade-in delay-7">
+                    <div class="card-header">
+                        <div class="card-icon">💬</div>
+                        <div class="card-title-row">
+                            <h3>SaleSmartly</h3>
+                            <span class="tag">智能客服</span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        全渠道客户沟通平台，集成WhatsApp、Facebook、Instagram、TikTok等社媒渠道。AI智能机器人7×24小时自动回复，支持100+语言实时翻译，自动化营销流程。
+                    </p>
+                    <ul class="features-list">
+                        <li>全渠道聚合</li>
+                        <li>AI智能回复</li>
+                        <li>100+语言翻译</li>
+                        <li>自动化营销</li>
+                    </ul>
+                    <a href="https://share.salesmartly.com/boss123" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        免费试用Pro版
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
@@ -663,23 +835,51 @@
             {
                 "@type": "ListItem",
                 "position": 1,
+                "name": "银河录像局",
+                "url": "https://nf.video/Y7SG6",
+                "description": "全球流媒体合租平台"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
                 "name": "AdsPower指纹浏览器",
                 "url": "https://www.adspower.net/share/boss123",
                 "description": "专业的多账号管理指纹浏览器"
             },
             {
                 "@type": "ListItem",
-                "position": 2,
+                "position": 3,
                 "name": "302AI人工智能平台",
                 "url": "https://share.302.ai/YGLbfB",
                 "description": "一站式AI应用聚合平台"
             },
             {
                 "@type": "ListItem",
-                "position": 3,
+                "position": 4,
                 "name": "HelpLook AI知识库",
                 "url": "https://share.helplook.net/boss123",
                 "description": "AI驱动的知识库搭建系统"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "kookeey全球代理IP",
+                "url": "https://kookeey-ye-wu-ji-quan-qiu-dai-li-ip.saaslink.net/boss123",
+                "description": "全球高质量代理IP严选平台"
+            },
+            {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "DuoPlus云手机",
+                "url": "https://www.duoplus.cn/share/boss123",
+                "description": "全球社媒多账号管理云手机"
+            },
+            {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "SaleSmartly智能客服",
+                "url": "https://share.salesmartly.com/boss123",
+                "description": "全渠道AI客户沟通平台"
             }
         ]
     }
