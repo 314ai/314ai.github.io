@@ -122,21 +122,29 @@
             font-family: 'Space Grotesk', sans-serif;
             font-size: 1.6rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 25%, #ec4899 50%, #f59e0b 75%, #10b981 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            background-size: 200% auto;
             text-decoration: none;
             letter-spacing: -0.5px;
             line-height: 1.6rem;
+            animation: gradientShift 5s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .badge {
-            font-size: 1.4rem;  /* 改为1.4rem */
+            font-size: 1.4rem;
             font-weight: 700;
             color: var(--accent-blue);
             font-family: 'Space Grotesk', sans-serif;
-            line-height: 1.4rem;  /* 改为1.4rem */
+            line-height: 1.4rem;
         }
 
         .nav-links {
@@ -314,6 +322,10 @@
             background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
         }
 
+        .hutao .card-icon {
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+        }
+
         .card-title-row {
             display: flex;
             align-items: center;
@@ -370,6 +382,11 @@
         .salesmartly .tag {
             background: rgba(236, 72, 153, 0.15);
             color: #f472b6;
+        }
+
+        .hutao .tag {
+            background: rgba(20, 184, 166, 0.15);
+            color: #2dd4bf;
         }
 
         .product-description {
@@ -486,6 +503,12 @@
             box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
         }
 
+        .hutao .cta-button {
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+        }
+
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
@@ -577,6 +600,7 @@
         .delay-5 { animation-delay: 0.5s; }
         .delay-6 { animation-delay: 0.6s; }
         .delay-7 { animation-delay: 0.7s; }
+        .delay-8 { animation-delay: 0.8s; }
     </style>
 </head>
 <body>
@@ -779,6 +803,32 @@
                         </svg>
                     </a>
                 </article>
+
+                <!-- HUTAO Card 胡桃卡 -->
+                <article class="product-card hutao fade-in delay-8">
+                    <div class="card-header">
+                        <div class="card-icon">💳</div>
+                        <div class="card-title-row">
+                            <h3>HUTAO Card</h3>
+                            <span class="tag">胡桃卡</span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        专业的虚拟信用卡服务平台，提供安全便捷的全球支付解决方案。支持多种场景的国际支付需求，操作简单，开卡快速，费率透明。
+                    </p>
+                    <ul class="features-list">
+                        <li>虚拟信用卡</li>
+                        <li>全球支付</li>
+                        <li>开卡快速</li>
+                        <li>安全可靠</li>
+                    </ul>
+                    <a href="https://hutaocards.com/login?code=bnnhhd" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        立即开卡
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </article>
             </div>
         </section>
     </main>
@@ -859,6 +909,13 @@
                 "name": "SaleSmartly智能客服",
                 "url": "https://share.salesmartly.com/boss123",
                 "description": "全渠道AI客户沟通平台"
+            },
+            {
+                "@type": "ListItem",
+                "position": 8,
+                "name": "HUTAO Card胡桃卡",
+                "url": "https://hutaocards.com/login?code=bnnhhd",
+                "description": "专业虚拟信用卡服务平台"
             }
         ]
     }
