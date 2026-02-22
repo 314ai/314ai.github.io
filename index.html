@@ -25,7 +25,7 @@
     <link rel="canonical" href="https://314ai.github.io">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -139,12 +139,19 @@
             100% { background-position: 0% 50%; }
         }
 
+        /* 工具甄选 - 圆润字体+彩虹渐变 */
         .badge {
+            font-family: 'Nunito', sans-serif;
             font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--accent-blue);
-            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ef4444 0%, #f97316 14%, #eab308 28%, #22c55e 42%, #06b6d4 56%, #3b82f6 70%, #8b5cf6 84%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% auto;
+            letter-spacing: 0.5px;
             line-height: 1.4rem;
+            animation: gradientShift 5s ease infinite;
         }
 
         .nav-links {
@@ -294,36 +301,117 @@
             filter: blur(15px);
         }
 
-        .yinhe .card-icon {
+        /* 彩虹色顺序: 红橙黄绿青蓝紫粉 */
+        /* 1. 红色 - 银河录像局 */
+        .card-red .card-icon {
             background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
         }
-
-        .adspower .card-icon {
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        .card-red .tag {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+        }
+        .card-red .cta-button {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
         }
 
-        .ai302 .card-icon {
-            background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+        /* 2. 橙色 - AdsPower */
+        .card-orange .card-icon {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        }
+        .card-orange .tag {
+            background: rgba(249, 115, 22, 0.15);
+            color: #fb923c;
+        }
+        .card-orange .cta-button {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
         }
 
-        .helplook .card-icon {
+        /* 3. 黄色 - 302AI */
+        .card-yellow .card-icon {
+            background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);
+        }
+        .card-yellow .tag {
+            background: rgba(234, 179, 8, 0.15);
+            color: #facc15;
+        }
+        .card-yellow .cta-button {
+            background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(234, 179, 8, 0.3);
+        }
+
+        /* 4. 绿色 - HelpLook */
+        .card-green .card-icon {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+        }
+        .card-green .tag {
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+        }
+        .card-green .cta-button {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+        }
+
+        /* 5. 青色 - kookeey */
+        .card-cyan .card-icon {
             background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
         }
-
-        .kookeey .card-icon {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        .card-cyan .tag {
+            background: rgba(6, 182, 212, 0.15);
+            color: #22d3ee;
+        }
+        .card-cyan .cta-button {
+            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
         }
 
-        .duoplus .card-icon {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        /* 6. 蓝色 - DuoPlus */
+        .card-blue .card-icon {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        }
+        .card-blue .tag {
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+        }
+        .card-blue .cta-button {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
         }
 
-        .salesmartly .card-icon {
+        /* 7. 紫色 - SaleSmartly */
+        .card-purple .card-icon {
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+        }
+        .card-purple .tag {
+            background: rgba(139, 92, 246, 0.15);
+            color: #a78bfa;
+        }
+        .card-purple .cta-button {
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+        }
+
+        /* 8. 紫红/粉紫 - HUTAO Card */
+        .card-violet .card-icon {
             background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
         }
-
-        .hutao .card-icon {
-            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+        .card-violet .tag {
+            background: rgba(236, 72, 153, 0.15);
+            color: #f472b6;
+        }
+        .card-violet .cta-button {
+            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
         }
 
         .card-title-row {
@@ -347,46 +435,6 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-        }
-
-        .yinhe .tag {
-            background: rgba(239, 68, 68, 0.15);
-            color: #f87171;
-        }
-
-        .adspower .tag {
-            background: rgba(59, 130, 246, 0.15);
-            color: #60a5fa;
-        }
-
-        .ai302 .tag {
-            background: rgba(139, 92, 246, 0.15);
-            color: #a78bfa;
-        }
-
-        .helplook .tag {
-            background: rgba(6, 182, 212, 0.15);
-            color: #22d3ee;
-        }
-
-        .kookeey .tag {
-            background: rgba(16, 185, 129, 0.15);
-            color: #34d399;
-        }
-
-        .duoplus .tag {
-            background: rgba(245, 158, 11, 0.15);
-            color: #fbbf24;
-        }
-
-        .salesmartly .tag {
-            background: rgba(236, 72, 153, 0.15);
-            color: #f472b6;
-        }
-
-        .hutao .tag {
-            background: rgba(20, 184, 166, 0.15);
-            color: #2dd4bf;
         }
 
         .product-description {
@@ -459,54 +507,6 @@
 
         .cta-button:hover::before {
             left: 100%;
-        }
-
-        .yinhe .cta-button {
-            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
-        }
-
-        .adspower .cta-button {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-        }
-
-        .ai302 .cta-button {
-            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-        }
-
-        .helplook .cta-button {
-            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
-        }
-
-        .kookeey .cta-button {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
-        }
-
-        .duoplus .cta-button {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
-        }
-
-        .salesmartly .cta-button {
-            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
-        }
-
-        .hutao .cta-button {
-            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
         }
 
         .cta-button:hover {
@@ -622,8 +622,8 @@
 
         <section class="products-section" id="tools">
             <div class="products-grid">
-                <!-- 银河录像局 Card -->
-                <article class="product-card yinhe fade-in delay-1">
+                <!-- 1. 银河录像局 - 红色 -->
+                <article class="product-card card-red fade-in delay-1">
                     <div class="card-header">
                         <div class="card-icon">🎬</div>
                         <div class="card-title-row">
@@ -648,8 +648,8 @@
                     </a>
                 </article>
 
-                <!-- AdsPower Card -->
-                <article class="product-card adspower fade-in delay-2">
+                <!-- 2. AdsPower - 橙色 -->
+                <article class="product-card card-orange fade-in delay-2">
                     <div class="card-header">
                         <div class="card-icon">🌐</div>
                         <div class="card-title-row">
@@ -674,8 +674,8 @@
                     </a>
                 </article>
 
-                <!-- 302AI Card -->
-                <article class="product-card ai302 fade-in delay-3">
+                <!-- 3. 302AI - 黄色 -->
+                <article class="product-card card-yellow fade-in delay-3">
                     <div class="card-header">
                         <div class="card-icon">🤖</div>
                         <div class="card-title-row">
@@ -700,8 +700,8 @@
                     </a>
                 </article>
 
-                <!-- HelpLook Card -->
-                <article class="product-card helplook fade-in delay-4">
+                <!-- 4. HelpLook - 绿色 -->
+                <article class="product-card card-green fade-in delay-4">
                     <div class="card-header">
                         <div class="card-icon">📚</div>
                         <div class="card-title-row">
@@ -726,8 +726,8 @@
                     </a>
                 </article>
 
-                <!-- kookeey Card -->
-                <article class="product-card kookeey fade-in delay-5">
+                <!-- 5. kookeey - 青色 -->
+                <article class="product-card card-cyan fade-in delay-5">
                     <div class="card-header">
                         <div class="card-icon">🌍</div>
                         <div class="card-title-row">
@@ -752,8 +752,8 @@
                     </a>
                 </article>
 
-                <!-- DuoPlus Card -->
-                <article class="product-card duoplus fade-in delay-6">
+                <!-- 6. DuoPlus - 蓝色 -->
+                <article class="product-card card-blue fade-in delay-6">
                     <div class="card-header">
                         <div class="card-icon">📱</div>
                         <div class="card-title-row">
@@ -778,8 +778,8 @@
                     </a>
                 </article>
 
-                <!-- SaleSmartly Card -->
-                <article class="product-card salesmartly fade-in delay-7">
+                <!-- 7. SaleSmartly - 紫色 -->
+                <article class="product-card card-purple fade-in delay-7">
                     <div class="card-header">
                         <div class="card-icon">💬</div>
                         <div class="card-title-row">
@@ -804,8 +804,8 @@
                     </a>
                 </article>
 
-                <!-- HUTAO Card 胡桃卡 -->
-                <article class="product-card hutao fade-in delay-8">
+                <!-- 8. HUTAO Card - 紫红/粉紫 -->
+                <article class="product-card card-violet fade-in delay-8">
                     <div class="card-header">
                         <div class="card-icon">💳</div>
                         <div class="card-title-row">
