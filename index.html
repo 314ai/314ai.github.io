@@ -301,7 +301,7 @@
             filter: blur(15px);
         }
 
-        /* 彩虹色顺序: 红橙黄绿青蓝紫粉 */
+        /* 彩虹色顺序: 红橙黄绿青蓝紫粉红 */
         /* 1. 红色 - 银河录像局 */
         .card-red .card-icon {
             background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
@@ -412,6 +412,20 @@
             background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
             color: white;
             box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+        }
+
+        /* 9. 深红色 - SocialEcho */
+        .card-crimson .card-icon {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        }
+        .card-crimson .tag {
+            background: rgba(220, 38, 38, 0.15);
+            color: #f87171;
+        }
+        .card-crimson .cta-button {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
         }
 
         .card-title-row {
@@ -601,6 +615,7 @@
         .delay-6 { animation-delay: 0.6s; }
         .delay-7 { animation-delay: 0.7s; }
         .delay-8 { animation-delay: 0.8s; }
+        .delay-9 { animation-delay: 0.9s; }
     </style>
 </head>
 <body>
@@ -829,6 +844,32 @@
                         </svg>
                     </a>
                 </article>
+
+                <!-- 9. SocialEcho - 深红色 -->
+                <article class="product-card card-crimson fade-in delay-9">
+                    <div class="card-header">
+                        <div class="card-icon">📢</div>
+                        <div class="card-title-row">
+                            <h3>SocialEcho</h3>
+                            <span class="tag">海外社媒</span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        一站式海外社交媒体管理平台，支持Facebook、Instagram、Twitter、LinkedIn等多平台账号集中管理。智能内容排期、数据分析、舆情监控，助力品牌出海营销。
+                    </p>
+                    <ul class="features-list">
+                        <li>多平台统一管理</li>
+                        <li>智能内容排期</li>
+                        <li>数据分析报表</li>
+                        <li>舆情监控预警</li>
+                    </ul>
+                    <a href="https://www.socialecho.net/share/EHnwSa" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        免费体验
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </article>
             </div>
         </section>
     </main>
@@ -916,6 +957,13 @@
                 "name": "HUTAO Card胡桃卡",
                 "url": "https://hutaocards.com/login?code=bnnhhd",
                 "description": "专业虚拟信用卡服务平台"
+            },
+            {
+                "@type": "ListItem",
+                "position": 9,
+                "name": "SocialEcho海外社媒管理",
+                "url": "https://www.socialecho.net/share/EHnwSa",
+                "description": "一站式海外社交媒体管理平台"
             }
         ]
     }
