@@ -301,7 +301,7 @@
             filter: blur(15px);
         }
 
-        /* 彩虹色顺序: 红橙黄绿青蓝紫粉红 */
+        /* 彩虹色顺序: 红橙黄绿青蓝紫红橙黄 */
         /* 1. 红色 - 银河录像局 */
         .card-red .card-icon {
             background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
@@ -400,32 +400,46 @@
             box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
         }
 
-        /* 8. 紫红/粉紫 - HUTAO Card */
-        .card-violet .card-icon {
-            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
-        }
-        .card-violet .tag {
-            background: rgba(236, 72, 153, 0.15);
-            color: #f472b6;
-        }
-        .card-violet .cta-button {
-            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
-        }
-
-        /* 9. 深红色 - SocialEcho */
-        .card-crimson .card-icon {
+        /* 8. 红色 - HUTAO Card */
+        .card-red-2 .card-icon {
             background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
         }
-        .card-crimson .tag {
+        .card-red-2 .tag {
             background: rgba(220, 38, 38, 0.15);
             color: #f87171;
         }
-        .card-crimson .cta-button {
+        .card-red-2 .cta-button {
             background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
             color: white;
             box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+        }
+
+        /* 9. 橙色 - Proxy302 */
+        .card-orange-2 .card-icon {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+        }
+        .card-orange-2 .tag {
+            background: rgba(234, 88, 12, 0.15);
+            color: #fb923c;
+        }
+        .card-orange-2 .cta-button {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+        }
+
+        /* 10. 黄色 - SocialEcho */
+        .card-yellow-2 .card-icon {
+            background: linear-gradient(135deg, #ca8a04 0%, #a16207 100%);
+        }
+        .card-yellow-2 .tag {
+            background: rgba(202, 138, 4, 0.15);
+            color: #facc15;
+        }
+        .card-yellow-2 .cta-button {
+            background: linear-gradient(135deg, #ca8a04 0%, #a16207 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(202, 138, 4, 0.3);
         }
 
         .card-title-row {
@@ -616,6 +630,7 @@
         .delay-7 { animation-delay: 0.7s; }
         .delay-8 { animation-delay: 0.8s; }
         .delay-9 { animation-delay: 0.9s; }
+        .delay-10 { animation-delay: 1.0s; }
     </style>
 </head>
 <body>
@@ -819,8 +834,8 @@
                     </a>
                 </article>
 
-                <!-- 8. HUTAO Card - 紫红/粉紫 -->
-                <article class="product-card card-violet fade-in delay-8">
+                <!-- 8. HUTAO Card - 红色（第二轮） -->
+                <article class="product-card card-red-2 fade-in delay-8">
                     <div class="card-header">
                         <div class="card-icon">💳</div>
                         <div class="card-title-row">
@@ -845,8 +860,34 @@
                     </a>
                 </article>
 
-                <!-- 9. SocialEcho - 深红色 -->
-                <article class="product-card card-crimson fade-in delay-9">
+                <!-- 9. Proxy302 - 橙色（第二轮） -->
+                <article class="product-card card-orange-2 fade-in delay-9">
+                    <div class="card-header">
+                        <div class="card-icon">🌐</div>
+                        <div class="card-title-row">
+                            <h3>Proxy302</h3>
+                            <span class="tag">全球代理</span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        按量付费的全球代理IP服务，提供真实住宅IP和数据中心IP。支持HTTP/HTTPS/SOCKS5协议，覆盖全球190+国家和地区，适合跨境电商、数据采集、社媒营销等场景。
+                    </p>
+                    <ul class="features-list">
+                        <li>按量付费灵活</li>
+                        <li>190+国家覆盖</li>
+                        <li>住宅+数据中心</li>
+                        <li>支持多协议</li>
+                    </ul>
+                    <a href="https://share.proxy302.com/hxIof1" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        立即使用
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- 10. SocialEcho - 黄色（第二轮） -->
+                <article class="product-card card-yellow-2 fade-in delay-10">
                     <div class="card-header">
                         <div class="card-icon">📢</div>
                         <div class="card-title-row">
@@ -961,6 +1002,13 @@
             {
                 "@type": "ListItem",
                 "position": 9,
+                "name": "Proxy302全球代理",
+                "url": "https://share.proxy302.com/hxIof1",
+                "description": "按量付费的全球代理IP服务"
+            },
+            {
+                "@type": "ListItem",
+                "position": 10,
                 "name": "SocialEcho海外社媒管理",
                 "url": "https://www.socialecho.net/share/EHnwSa",
                 "description": "一站式海外社交媒体管理平台"
