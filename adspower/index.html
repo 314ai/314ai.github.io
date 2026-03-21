@@ -1,1 +1,1112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdsPower指纹浏览器 - 跨境电商多账号防关联利器 | 免费注册</title>
+    <meta name="description" content="AdsPower指纹浏览器是专为跨境电商、海外社媒营销打造的多账号管理工具。支持Chrome/Firefox双内核，提供RPA自动化、窗口同步、指纹伪装等功能，有效防止账号关联封号。免费注册送2个环境！">
+    <meta name="keywords" content="AdsPower,指纹浏览器,防关联浏览器,跨境电商,多账号管理,亚马逊多开,Facebook养号,TikTok运营,RPA自动化">
+    <meta name="author" content="314ai">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AdsPower指纹浏览器 - 跨境电商多账号防关联利器">
+    <meta property="og:description" content="900万+用户信赖的指纹浏览器，支持20+指纹参数定制，双内核切换，RPA自动化，免费体验2个环境！">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://314ai.github.io/adspower/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AdsPower指纹浏览器 - 跨境电商必备工具">
+    <meta name="twitter:description" content="专业多账号防关联管理，支持Amazon、Facebook、TikTok等平台，免费注册送2个环境！">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://314ai.github.io/adspower/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #7c3aed;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-cta {
+            background: var(--gradient);
+            color: white !important;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: var(--gradient);
+            opacity: 0.1;
+            border-radius: 50%;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(-30px, -30px) rotate(180deg); }
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #1e293b 0%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-content .subtitle {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            color: var(--dark);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .hero-visual {
+            position: relative;
+        }
+        
+        .browser-mockup {
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+            transition: transform 0.3s;
+        }
+        
+        .browser-mockup:hover {
+            transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+        }
+        
+        .browser-header {
+            background: #f1f5f9;
+            padding: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        
+        .browser-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .dot-red { background: #ef4444; }
+        .dot-yellow { background: #f59e0b; }
+        .dot-green { background: #10b981; }
+        
+        .browser-content {
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        .floating-badge {
+            position: absolute;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            animation: bounce 2s infinite;
+        }
+        
+        .badge-1 {
+            top: 10%;
+            right: -20px;
+            color: var(--success);
+        }
+        
+        .badge-2 {
+            bottom: 20%;
+            left: -30px;
+            color: var(--accent);
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 6rem 2rem;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .section-header p {
+            font-size: 1.125rem;
+            color: #64748b;
+        }
+        
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--dark);
+        }
+        
+        .feature-card p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+        
+        /* Use Cases */
+        .use-cases {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+        }
+        
+        .use-cases .section-header h2,
+        .use-cases .section-header p {
+            color: white;
+        }
+        
+        .use-cases-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .use-case-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .use-case-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .use-case-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .use-case-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .use-case-card p {
+            color: #94a3b8;
+            line-height: 1.7;
+        }
+        
+        /* Pricing/Free Plan */
+        .pricing {
+            padding: 6rem 2rem;
+            background: #f8fafc;
+        }
+        
+        .pricing-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-card::before {
+            content: '免费';
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: var(--gradient-2);
+            color: white;
+            padding: 0.5rem 3rem;
+            transform: rotate(45deg);
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+        
+        .pricing-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            color: #64748b;
+            font-weight: 400;
+        }
+        
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .features-list li {
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #475569;
+        }
+        
+        .features-list li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: 700;
+            width: 24px;
+            height: 24px;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 6rem 2rem;
+            background: #f8fafc;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 16px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--dark);
+            transition: color 0.3s;
+        }
+        
+        .faq-question:hover {
+            color: var(--primary);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #64748b;
+            line-height: 1.7;
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .faq-item.active .faq-question {
+            color: var(--primary);
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 2rem;
+            background: var(--gradient);
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-section h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn-white {
+            background: white;
+            color: var(--primary);
+            padding: 1.25rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: inline-block;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s;
+        }
+        
+        .btn-white:hover {
+            transform: translateY(-3px) scale(1.05);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer-disclaimer {
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .features-grid,
+            .use-cases-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Schema.org structured data (hidden) */
+        .structured-data {
+            display: none;
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json" class="structured-data">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AdsPower指纹浏览器",
+        "description": "专为跨境电商和社媒营销打造的多账号防关联浏览器，支持RPA自动化和双内核切换",
+        "url": "https://www.adspower.net/share/boss123",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "免费版包含2个浏览器环境"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "9000000"
+        },
+        "featureList": "多账号管理, 浏览器指纹伪装, RPA自动化, 窗口同步, 团队协作, 双内核支持"
+    }
+    </script>
+    
+    <script type="application/ld+json" class="structured-data">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "AdsPower指纹浏览器免费版有什么限制？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AdsPower免费版提供2个独立的浏览器环境，支持基础的指纹伪装和多账号管理功能，足够个人用户体验产品核心功能。"
+            }
+        }, {
+            "@type": "Question",
+            "name": "AdsPower如何防止账号关联？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AdsPower通过创建20多个可定制参数的独立浏览器指纹，配合独立IP配置，确保每个账号环境完全隔离，有效防止平台检测到账号关联。"
+            }
+        }]
+    }
+    </script>
 
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>🛡️</span>
+                <span>314ai精选</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">核心功能</a>
+                <a href="#use-cases">应用场景</a>
+                <a href="#pricing">免费方案</a>
+                <a href="#faq">常见问题</a>
+                <a href="https://www.adspower.net/share/boss123" target="_blank" class="nav-cta" rel="nofollow sponsored">立即注册</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <h1>AdsPower指纹浏览器<br>多账号防关联利器</h1>
+                <p class="subtitle">
+                    专为跨境电商、海外社媒营销打造的专业工具。支持Chrome/Firefox双内核，
+                    提供20+指纹参数定制，RPA自动化机器人，窗口同步操作，
+                    让您的账号矩阵管理更安全、更高效。
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">900万+</span>
+                        <span class="stat-label">全球用户</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">235个</span>
+                        <span class="stat-label">覆盖国家</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.8分</span>
+                        <span class="stat-label">用户评分</span>
+                    </div>
+                </div>
+                
+                <div class="cta-group">
+                    <a href="https://www.adspower.net/share/boss123" target="_blank" class="btn-primary" rel="nofollow sponsored">
+                        <span>🚀</span>
+                        <span>免费注册送2个环境</span>
+                    </a>
+                    <a href="#features" class="btn-secondary">
+                        <span>📖</span>
+                        <span>了解功能详情</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-in">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-dot dot-red"></div>
+                        <div class="browser-dot dot-yellow"></div>
+                        <div class="browser-dot dot-green"></div>
+                        <div style="margin-left: 1rem; color: #64748b; font-size: 0.875rem;">AdsPower - 多账号安全管理</div>
+                    </div>
+                    <div class="browser-content">
+                        <div style="text-align: center;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🛡️</div>
+                            <div>指纹环境完全隔离</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">每个账号独立IP + 独立指纹</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <span>✓</span>
+                    <span>已通过所有平台检测</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <span>🤖</span>
+                    <span>RPA自动化支持</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header fade-in">
+            <h2>为什么选择 AdsPower？</h2>
+            <p>行业领先的指纹浏览器技术，为跨境业务提供全方位的账号安全保护</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🔒</div>
+                <h3>极致指纹伪装</h3>
+                <p>支持20+可定制指纹参数，包括Canvas、WebRTC、时区、语言、分辨率等。每个浏览器环境完全隔离，Cookie、本地存储独立，杜绝数据交叉污染。</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🌐</div>
+                <h3>Chrome + Firefox 双内核</h3>
+                <p>业界首创双内核支持（SunBrowser & FlowerBrowser），可根据不同平台风控策略灵活切换，支持Chrome官方商店扩展插件安装。</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🤖</div>
+                <h3>RPA自动化机器人</h3>
+                <p>无代码自动化流程，支持Facebook自动发帖、TikTok养号、亚马逊浏览加购等重复性任务。提供丰富模板商店，一键批量操作。</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <div class="feature-icon">⚡</div>
+                <h3>窗口同步操作</h3>
+                <p>主窗口操作实时同步至其他窗口，支持跨屏同步。一次操作，多账号同时执行，大幅提升矩阵账号管理效率。</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <div class="feature-icon">👥</div>
+                <h3>团队协作管理</h3>
+                <p>灵活的权限设置、账号分组、操作日志监控。支持成员权限分级管理，确保团队协同高效且安全可控。</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <div class="feature-icon">📱</div>
+                <h3>移动端模拟</h3>
+                <p>支持iOS和Android设备指纹模拟，适配TikTok等移动端优先平台的运营需求，实现桌面端操作移动端环境。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases" id="use-cases">
+        <div class="section-header fade-in">
+            <h2>适用业务场景</h2>
+            <p>覆盖跨境电商、社媒营销、广告投放等核心业务场景</p>
+        </div>
+        
+        <div class="use-cases-grid">
+            <div class="use-case-card fade-in">
+                <div class="use-case-icon">🛒</div>
+                <h3>跨境电商多店铺</h3>
+                <p>Amazon、Shopee、Lazada、TikTok Shop等多平台店铺防关联管理，一个设备安全运营多个店铺账号。</p>
+            </div>
+            
+            <div class="use-case-card fade-in">
+                <div class="use-case-icon">📢</div>
+                <h3>社媒矩阵运营</h3>
+                <p>Facebook、Instagram、Twitter/X、TikTok多账号养号、内容发布、互动管理，避免账号关联封号。</p>
+            </div>
+            
+            <div class="use-case-card fade-in">
+                <div class="use-case-icon">💰</div>
+                <h3>广告投放优化</h3>
+                <p>Google Ads、Facebook Ads多账号投放策略测试，独立环境防止广告账号关联限制。</p>
+            </div>
+            
+            <div class="use-case-card fade-in">
+                <div class="use-case-icon">🔍</div>
+                <h3>市场调研采集</h3>
+                <p>独立IP环境进行竞品价格监控、市场调研，避免触发反爬机制导致IP封禁。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="section-header fade-in">
+            <h2>免费开始使用</h2>
+            <p>注册即送2个永久免费环境，零成本体验专业级指纹浏览器</p>
+        </div>
+        
+        <div class="pricing-card fade-in">
+            <h3>入门方案</h3>
+            <div class="price">¥0 <span>/ 永久免费</span></div>
+            <p style="color: #64748b; margin-bottom: 2rem;">适合个人用户体验核心功能</p>
+            
+            <ul class="features-list">
+                <li>2个独立浏览器环境</li>
+                <li>Chrome + Firefox 双内核</li>
+                <li>基础指纹伪装功能</li>
+                <li>RPA自动化模板（限时免费）</li>
+                <li>窗口同步功能</li>
+                <li>本地数据加密存储</li>
+                <li>邮件技术支持</li>
+            </ul>
+            
+            <a href="https://www.adspower.net/share/boss123" target="_blank" class="btn-primary" style="width: 100%; justify-content: center;" rel="nofollow sponsored">
+                立即免费注册
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="section-header fade-in">
+            <h2>常见问题</h2>
+            <p>解答您关于AdsPower的疑问</p>
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span>AdsPower免费版有什么限制？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    免费版提供2个独立的浏览器环境，支持基础的指纹伪装、多账号管理、窗口同步等核心功能。对于个人用户或小型业务测试来说已经足够使用。如果需要更多环境或高级团队协作功能，可以考虑付费方案。
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span>指纹浏览器真的能有效防关联吗？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    AdsPower通过修改浏览器指纹参数（如Canvas、WebGL、字体、时区等）配合独立IP代理，为每个账号创建完全隔离的浏览器环境。根据官方数据和用户反馈，AdsPower已通过目前所有主流平台（Amazon、Facebook、TikTok、Google等）的检测。
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span>RPA自动化功能如何使用？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    AdsPower提供无代码RPA流程编辑器，内置丰富的模板商店（包括Facebook发帖、TikTok养号、亚马逊搜索等）。用户可以直接使用模板或自定义流程，设置定时任务实现自动化操作，大幅提升矩阵账号运营效率。
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span>支持哪些操作系统？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    AdsPower支持Windows、macOS（包括Intel和M1芯片）、Linux系统。同时提供Android和iOS移动端的指纹模拟功能，可以在桌面端模拟移动端浏览器环境，满足TikTok等移动优先平台的运营需求。
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <span>如何配置代理IP？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    AdsPower支持Sock5/HTTP/HTTPS/SSH等多种代理协议。您可以为每个浏览器环境单独配置代理IP，支持主流代理服务商（如IPFoxy、Bright Data等）的集成，也可以手动添加自定义代理。正确配置代理IP是实现账号防关联的关键步骤。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content fade-in">
+            <h2>立即开始保护您的账号安全</h2>
+            <p>加入900万+用户的行列，使用AdsPower管理您的跨境业务账号矩阵</p>
+            <a href="https://www.adspower.net/share/boss123" target="_blank" class="btn-white" rel="nofollow sponsored">
+                免费注册 AdsPower →
+            </a>
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                注册即送2个永久免费环境 | 无需信用卡
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.adspower.net/share/boss123" target="_blank" rel="nofollow sponsored">AdsPower官网</a>
+                <a href="#features">功能介绍</a>
+                <a href="#pricing">价格方案</a>
+                <a href="#faq">帮助中心</a>
+            </div>
+            
+            <div class="footer-disclaimer">
+                <p>© 2026 314ai工具推荐</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+                
+                // Open clicked if wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
