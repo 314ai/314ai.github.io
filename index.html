@@ -554,6 +554,16 @@
             color: var(--text-primary);
         }
 
+        .footer-links .footer-text {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links .footer-text:hover {
+            color: var(--text-primary);
+        }
+
         .copyright {
             font-size: 0.8rem;
             opacity: 0.7;
@@ -997,7 +1007,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <span style="color: var(--text-secondary); font-size: 0.85rem;">GitHub</span>
+                <span class="footer-text">GitHub</span>
                 <a href="#privacy">免费福利</a>
                 <a href="#" onclick="event.preventDefault(); navigator.clipboard.writeText('https://314ai.github.io').then(() => { alert('网站地址已复制，请保存收藏'); }).catch(() => { prompt('请手动复制', 'https://314ai.github.io'); });">收藏本站</a>
                 <a href="#" onclick="event.preventDefault(); navigator.clipboard.writeText('3930323142').then(() => { alert('已复制到剪贴板，请添加qq：3930323142售前/售后/投诉'); }).catch(() => { prompt('请手动复制', '添加qq：3930323142'); });" title="点击复制QQ号">本站客服</a>
