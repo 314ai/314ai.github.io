@@ -32,15 +32,8 @@
     <style>
         :root {
             --primary-bg: #0a0a0f;
-            --secondary-bg: #12121a;
             --card-bg: rgba(255, 255, 255, 0.03);
             --accent-blue: #3b82f6;
-            --accent-purple: #8b5cf6;
-            --accent-cyan: #06b6d4;
-            --accent-green: #10b981;
-            --accent-orange: #f59e0b;
-            --accent-pink: #ec4899;
-            --accent-red: #ef4444;
             --text-primary: #ffffff;
             --text-secondary: #a1a1aa;
             --border-color: rgba(255, 255, 255, 0.1);
@@ -156,40 +149,11 @@
             animation: gradientShift 5s ease infinite;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent-blue);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--text-primary);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
+        
+        
+        
+        
+        
         /* Hero Section */
         .hero {
             text-align: center;
@@ -211,14 +175,7 @@
             animation: fadeInUp 0.8s ease-out;
         }
 
-        .h1-line {
-            display: block;
-            background: linear-gradient(135deg, #fff 0%, #c7c7c7 50%, #fff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
+        
         .hero p {
             font-size: 1.05rem;
             color: var(--text-secondary);
@@ -571,10 +528,7 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
+            
             .products-grid {
                 grid-template-columns: 1fr;
             }
@@ -626,10 +580,6 @@
     <!-- <meta name="baidu-site-verification" content="YOUR_CODE"> -->
 
     <!-- 预加载关键资源 -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- 面包屑导航结构化数据 -->
     <script type="application/ld+json">
@@ -732,13 +682,14 @@
         "description": "精选AI工具与出海效率软件推荐平台"
     }
     </script>
-<base target="_blank">
-<base target="_blank">
-<base target="_blank">
-<base target="_blank">
-<base target="_blank">
-<base target="_blank">
-<base target="_blank">
+
+
+
+
+
+
+
+
 <base target="_blank">
 </head>
 <body>
@@ -760,33 +711,11 @@
 
         <section class="products-section" id="tools">
             <div class="products-grid">
-                <!-- 1. 飞行派 - red -->
+                
+                
+                
+                <!-- 1. HUTAO Card - red -->
 <article class="product-card card-red fade-in delay-1">
-                    <div class="card-header">
-                        <div class="card-icon">✈️</div>
-                        <div class="card-title-row">
-                            <h3>飞行派</h3>
-                            <span class="tag">GPT代充</span>
-                        </div>
-                    </div>
-                    <p class="product-description">
-                        专业提供ChatGPTplus/pro5x/pro20x及Claude等热门AI代充服务，平台稳定，自动发货系统，支持支付宝。（代充前后可咨询微信YCHR365）
-                    </p>
-                    <ul class="features-list">
-                        <li>ChatGPT/Claude</li>
-                        <li>AI代充合租</li>
-                        <li>自动发货系统</li>
-                        <li>稳定靠谱</li>
-                    </ul>
-                    <a href="https://spotifyzc.com/?incode=jAnlL4" target="_blank" rel="noopener noreferrer" class="cta-button">
-                        立即充值
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                        </svg>
-                    </a>
-                </article>
-                <!-- 2. HUTAO Card - orange -->
-<article class="product-card card-orange fade-in delay-2">
                     <div class="card-header">
                         <div class="card-icon">💳</div>
                         <div class="card-title-row">
@@ -810,8 +739,8 @@
                         </svg>
                     </a>
                 </article>
-                <!-- 3. familypro - yellow -->
-<article class="product-card card-yellow fade-in delay-3">
+                <!-- 2. familypro - orange -->
+<article class="product-card card-orange fade-in delay-2">
                     <div class="card-header">
                         <div class="card-icon">👨‍👩‍👧‍👦</div>
                         <div class="card-title-row">
@@ -830,6 +759,31 @@
                     </ul>
                     <a href="https://familypro.io?invite=LG4d7eca" target="_blank" rel="noopener noreferrer" class="cta-button">
                         立即上车
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </article>
+                <!-- 3. 飞行派 - yellow -->
+<article class="product-card card-yellow fade-in delay-3">
+                    <div class="card-header">
+                        <div class="card-icon">✈️</div>
+                        <div class="card-title-row">
+                            <h3>飞行派</h3>
+                            <span class="tag">GPT代充</span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        专业提供ChatGPTplus/pro5x/pro20x及Claude等热门AI代充服务，平台稳定，自动发货系统，支持支付宝。（代充前后可咨询微信YCHR365）
+                    </p>
+                    <ul class="features-list">
+                        <li>ChatGPT/Claude</li>
+                        <li>AI代充合租</li>
+                        <li>自动发货系统</li>
+                        <li>稳定靠谱</li>
+                    </ul>
+                    <a href="https://spotifyzc.com/?incode=jAnlL4" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        立即充值
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
