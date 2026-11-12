@@ -306,6 +306,20 @@
             box-shadow: 0 4px 15px rgba(234, 179, 8, 0.3);
         }
 
+        /* 4. 绿色 - 代充商城（备用） */
+        .card-green .card-icon {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+        }
+        .card-green .tag {
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+        }
+        .card-green .cta-button {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+        }
+
         .card-title-row {
             display: flex;
             align-items: center;
@@ -484,6 +498,7 @@
         .delay-1 { animation-delay: 0.1s; }
         .delay-2 { animation-delay: 0.15s; }
         .delay-3 { animation-delay: 0.2s; }
+        .delay-4 { animation-delay: 0.25s; }
     </style>
 
     <!-- 额外的SEO优化标签 -->
@@ -550,10 +565,18 @@
                 "name": "API中转站",
                 "url": "https://www.apigoto.com/boss258",
                 "description": "AI大模型API中转服务，支持主流模型接口"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "代充商城（备用）",
+                "url": "https://www.16688.com.cn/shop/BOSS258",
+                "description": "一站式海外AI账号代充平台，支付宝付款自动发货"
             }
         ]
     }
     </script>
+<base target="_blank">
 <base target="_blank">
 </head>
 <body>
@@ -648,6 +671,31 @@
                     </ul>
                     <a href="https://www.apigoto.com/boss258" target="_blank" rel="noopener noreferrer" class="cta-button">
                         免费试用
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </article>
+                <!-- 4. 代充商城（备用） - green -->
+                <article class="product-card card-green fade-in delay-4">
+                    <div class="card-header">
+                        <div class="card-icon">🏪</div>
+                        <div class="card-title-row">
+                            <h3>代充商城（备用）</h3>
+                            <span class="tag">GPT代充</span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        专为大陆用户提供ChatGPT、Grok等海外AI代充订阅的平台，支持微信支付宝，自动发货。
+                    </p>
+                    <ul class="features-list">
+                        <li>GPT/Grok代充</li>
+                        <li>支持微信</li>
+                        <li>自动快速到账</li>
+                        <li>售后保障</li>
+                    </ul>
+                    <a href="https://www.16688.com.cn/shop/BOSS258" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        立即充值
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
